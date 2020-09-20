@@ -10,12 +10,23 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import MuiCarousel from './components/muiCarousel';
+import pstyle from "./styles";
+import {colors} from "@material-ui/core";
+import ComplexButton from "./components/complexButton";
 
 const Home = () => {
     return(
         <div>
-            {/*<h1>hi</h1>*/}
             <Carouselaki />
+            <h1 style={{marginTop: 150, textAlign: 'center', }}>About Me</h1>
+            <h5 style={pstyle}>
+                Hi, I am Eleonora Pikouni. I am 17 years old from Greece and recently moved the UK to study Business
+                and hospitality at the University of Plymouth. I love art and these are some of the pieces I have made
+                in my spare time.
+            </h5>
+            <ComplexButton />
+            <h1 style={{marginTop: 100, textAlign: 'center', }}>Contact</h1>
+
         </div>
 
     )

@@ -1,4 +1,7 @@
 import React from "react";
+import photo1 from '../../../../assets/photos/1.JPG'
+import photo3 from '../../../../assets/photos/3.JPG'
+import photo7 from '../../../../assets/photos/7.JPG'
 import photo6 from '../../../../assets/photos/6.JPG'
 import photo11 from '../../../../assets/photos/11.JPG'
 import photo12 from '../../../../assets/photos/12.JPG'
@@ -28,17 +31,17 @@ const slides = [
 
 const mobileSlides = [
     {
-        photo: photo11,
+        photo: photo1,
         title: "Mobile title1",
         description: "desc1"
     },
     {
-        photo: photo6,
+        photo: photo3,
         title: "Mobile title1",
         description: "desc1"
     },
     {
-        photo: photo12,
+        photo: photo7,
         title: "Mobile title1",
         description: "desc1"
     }

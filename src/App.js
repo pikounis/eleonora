@@ -12,13 +12,9 @@ function App() {
             <Layout>
                 <Route path={'/'} exact component={Home} />
                 <Route path={'/gallery'} component={Gallery} />
-                <Route path={'/about'} component={About} />
+                {/*<Route path={'/about'} component={About} />*/}
             </Layout>
         </BrowserRouter>
-
-
-
-
     </div>
   );
 }

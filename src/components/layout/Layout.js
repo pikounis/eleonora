@@ -68,7 +68,7 @@ export default function HideAppBar({children, ...props}) {
                         <Tabs value={currentTab} aria-label="simple tabs example" onChange={(_, value) => setCurrentTab(value)}>
                             <Tab label="Home" component={Link} to={'/'} />
                             <Tab label="Gallery" component={Link} to={'/gallery'} />
-                            <Tab label="About" component={Link} to={'/about'} />
+                            {/*<Tab label="About" component={Link} to={'/about'} />*/}
                         </Tabs>
                     </Toolbar>
                 </AppBar>

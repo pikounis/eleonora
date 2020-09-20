@@ -1,9 +1,13 @@
+import {isMobile} from 'react-device-detect';
+
+const height = window.innerHeight - (isMobile ? 56 : 64);
+
 const styles = {
     windowSize: {
-        height: window.innerHeight-64
+        height,
     },
     carouselItem: {
-        height: window.innerHeight-64,
+        height,
         width: 'auto',
         // height: 'auto',
         // width: '50%',

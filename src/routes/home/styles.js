@@ -1,8 +1,9 @@
-// const photoStyle = () => {
-//     height: '30%',
-//         width
-// :
-//     '30%';
-// }
-// export default photoStyle;
+const pstyle = {
+    marginTop: 100,
+    marginBottom: 50,
+    marginLeft: 50,
+    marginRight: 50,
+    textAlign: 'justify',
+};
 
+export default pstyle;
