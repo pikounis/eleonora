@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,8 +9,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
+import { changeRoute } from '../../model/actions';
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -38,14 +39,14 @@ HideOnScroll.propTypes = {
 const getLocation = location => {
 
     console.log(location)
-    switch (location.pathname) {
+    switch (location) {
 
         case '/gallery': {
             return 1;
         }
-        case '/about': {
-            return 2;
-        }
+        // case '/about': {
+        //     return 2;
+        // }
         case '/': {
             return 0;
         }
@@ -56,8 +57,13 @@ const getLocation = location => {
 }
 
 export default function HideAppBar({children, ...props}) {
-    const location = useLocation();
+    const location = useSelector(state => state.route);
     const [currentTab, setCurrentTab] = React.useState(getLocation(location));
+
+    const dispatch = useDispatch();
+    useEffect(() => setCurrentTab(getLocation(location)), [location])
+
+
     return (
         <React.Fragment>
             <CssBaseline />
@@ -66,8 +72,8 @@ export default function HideAppBar({children, ...props}) {
                     <Toolbar>
                         <Typography variant="h6">Eleonora Pikouni</Typography>
                         <Tabs value={currentTab} aria-label="simple tabs example" onChange={(_, value) => setCurrentTab(value)}>
-                            <Tab label="Home" component={Link} to={'/'} />
-                            <Tab label="Gallery" component={Link} to={'/gallery'} />
+                            <Tab label="Home" component={Link} to={'/'} onClick={() => dispatch(changeRoute('/'))}/>
+                            <Tab label="Gallery" component={Link} to={'/gallery'} onClick={() => dispatch(changeRoute('/gallery'))}/>
                             {/*<Tab label="About" component={Link} to={'/about'} />*/}
                         </Tabs>
                     </Toolbar>

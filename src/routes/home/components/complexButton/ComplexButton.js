@@ -1,14 +1,16 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
 import {Link} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import photo1 from '../../../../assets/photos/1.JPG';
+import photo15 from '../../../../assets/photos/15.JPG';
+import {changeRoute} from "../../../../model/actions";
 
 
 const images = [
     {
-        url: photo1,
+        url: photo15,
         title: 'Gallery',
         width: '100%',
         height: 250
@@ -100,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ComplexButton = () => {
     const classes = useStyles();
+    const dispatch = useDispatch();
 
     return (
         <div className={classes.root}>
@@ -115,6 +118,7 @@ const ComplexButton = () => {
                     }}
                     component={Link}
                     to={'/gallery'}
+                    onClick={() => dispatch(changeRoute('/gallery'))}
                 >
           <span
               className={classes.imageSrc}

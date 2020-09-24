@@ -13,6 +13,7 @@ import MuiCarousel from './components/muiCarousel';
 import pstyle from "./styles";
 import {colors} from "@material-ui/core";
 import ComplexButton from "./components/complexButton";
+import ContactForm from "./components/contactForm";
 
 const Home = () => {
     return(
@@ -25,8 +26,11 @@ const Home = () => {
                 in my spare time.
             </h5>
             <ComplexButton />
-            <h1 style={{marginTop: 100, textAlign: 'center', }}>Contact</h1>
+            <h1 style={{marginTop: 150, marginBottom: 100, textAlign: 'center', }}>Contact</h1>
+            <ContactForm/>
+            <p style={{marginBottom: 500}}>
 
+            </p>
         </div>
 
     )
