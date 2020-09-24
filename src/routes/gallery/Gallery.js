@@ -26,6 +26,7 @@ const Gallery = () => {
                 direction="row"
                 justify="space-evenly"
                 alignItems="stretch"
+                style={{paddingTop: 20}}
             >
                 <Grid item>
                     <ArtCard

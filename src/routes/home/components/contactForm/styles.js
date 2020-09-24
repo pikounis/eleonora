@@ -4,18 +4,15 @@ const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
         flexWrap: 'wrap',
-        '& > *': {
-            margin: theme.spacing(1),
-            width: theme.spacing(16),
-            height: theme.spacing(16),
-        },
+        width: '60%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
     },
+    paper: {
+        width: '100%',
+        padding: 10,
+
+    }
 }));
 
-let color = {
-    r: 144,
-    g: 0,
-    b: 255,
-}
-
-export { useStyles, color };
+export { useStyles };
