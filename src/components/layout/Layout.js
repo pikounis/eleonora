@@ -11,6 +11,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Slide from '@material-ui/core/Slide';
 import { changeRoute } from '../../model/actions';
+import Footer from "./components/footer";
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -70,7 +71,7 @@ export default function HideAppBar({children, ...props}) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar>
-                        <Typography variant="h6">Eleonora Pikouni</Typography>
+                        <Typography variant="h6" style={{ flexGrow: 1 }}>Eleonora Pikouni</Typography>
                         <Tabs value={currentTab} aria-label="simple tabs example" onChange={(_, value) => setCurrentTab(value)}>
                             <Tab label="Home" component={Link} to={'/'} onClick={() => dispatch(changeRoute('/'))}/>
                             <Tab label="Gallery" component={Link} to={'/gallery'} onClick={() => dispatch(changeRoute('/gallery'))}/>
@@ -83,6 +84,7 @@ export default function HideAppBar({children, ...props}) {
             {
                 children
             }
+            <Footer/>
         </React.Fragment>
     );
 }

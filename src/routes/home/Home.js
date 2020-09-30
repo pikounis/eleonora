@@ -28,7 +28,7 @@ const Home = () => {
             <ComplexButton />
             <h1 style={{marginTop: 150, marginBottom: 100, textAlign: 'center', }}>Contact</h1>
             <ContactForm/>
-            <p style={{marginBottom: 500}}>
+            <p style={{marginBottom: 100}}>
 
             </p>
         </div>

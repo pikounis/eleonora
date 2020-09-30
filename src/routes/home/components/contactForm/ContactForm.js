@@ -8,7 +8,7 @@ import { TextField } from 'mui-rff';
 import { handleTextChange } from "../../../../model/actions";
 import { useStyles } from "./styles";
 import Button from '@material-ui/core/Button';
-
+import { submitForm } from "../../../../model/actions";
 
 const ContactForm = () => {
     const dispatch = useDispatch();
@@ -20,11 +20,11 @@ const ContactForm = () => {
 
 
             <Paper
-                elevation={0}
+                elevation={3}
                 className={classes.paper}
             >
                 <Form
-                    onSubmit={(values) => console.log(values)}
+                    onSubmit={(values) => dispatch(submitForm(values))}
                     render={({ handleSubmit, values }) => (
                         <form onSubmit={handleSubmit} noValidate>
                             <Grid
@@ -84,25 +84,8 @@ const ContactForm = () => {
                         </form>
                     )}
                 />
-
             </Paper>
-
-
         </div>
-
-
-
-
-        // <Form
-        //     onSubmit={(values => console.log(values))}
-        //     render={({ handleSubmit, values }) => (
-        //         <form onSubmit={handleSubmit} noValidate>
-        //             {/*<RffTextfield label="Hello world" name="hello" required={true} />*/}
-        //             <TextField id="standard-basic" label="First Name" />
-        //             <pre>{JSON.stringify(values)}</pre>
-        //         </form>
-        //     )}
-        //  />
     );
 }
 
