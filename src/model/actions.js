@@ -1,8 +1,8 @@
 const changeRouteType = 'CHANGE_ROUTE_TYPE';
-
 const handleTextChangeType = 'HANDLE_TEXT_CHANGE_TYPE';
-
 const submitFormType = 'SUBMIT_FORM_TYPE';
+const submitFormSucceededType = 'SUBMIT_FORM_SUCCEEDED_TYPE';
+const submitFormFailedType = 'SUBMIT_FORM_FAILED_TYPE';
 
 const changeRoute = (payload) => ({
     type: changeRouteType,
@@ -19,6 +19,16 @@ const submitForm = (payload) => ({
     payload
 });
 
+const submitFormSucceeded = (payload) => ({
+    type: submitFormSucceededType,
+    payload
+});
+
+const submitFormFailed = (payload) => ({
+    type: submitFormFailedType,
+    payload
+});
+
 export {
     changeRoute,
     changeRouteType,
@@ -26,4 +36,8 @@ export {
     handleTextChangeType,
     submitForm,
     submitFormType,
+    submitFormSucceeded,
+    submitFormSucceededType,
+    submitFormFailed,
+    submitFormFailedType,
 };

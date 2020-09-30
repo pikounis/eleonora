@@ -3,7 +3,9 @@ import * as actions from './actions';
 const initialState = {
     value: true,
     text: '',
-    route: '/'
+    route: '/',
+    formSubmitted: false,
+    formError: false,
 };
 
 const reducer = (state=initialState, action) => {
@@ -18,6 +20,18 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 text: action.payload
+            }
+        }
+        case actions.submitFormSucceededType: {
+            return {
+                ...state,
+                formSubmitted: true
+            }
+        }
+        case actions.submitFormFailedType: {
+            return {
+                ...state,
+                formError: true
             }
         }
         default: {

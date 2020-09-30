@@ -14,6 +14,7 @@ import pstyle from "./styles";
 import {colors} from "@material-ui/core";
 import ComplexButton from "./components/complexButton";
 import ContactForm from "./components/contactForm";
+import {useSelector} from "react-redux";
 
 const Home = () => {
     return(
@@ -27,7 +28,7 @@ const Home = () => {
             </h5>
             <ComplexButton />
             <h1 style={{marginTop: 150, marginBottom: 100, textAlign: 'center', }}>Contact</h1>
-            <ContactForm/>
+            {/*{ useSelector(state => state ? <ContactForm/> : <p>Message successfully sent</p> }*/}
             <p style={{marginBottom: 100}}>
 
             </p>
