@@ -17,6 +17,7 @@ import ContactForm from "./components/contactForm";
 import {useSelector} from "react-redux";
 
 const Home = () => {
+    const formSubmitted = useSelector(state => state.formSubmitted)
     return(
         <div>
             <Carouselaki />
@@ -28,12 +29,12 @@ const Home = () => {
             </h5>
             <ComplexButton />
             <h1 style={{marginTop: 150, marginBottom: 100, textAlign: 'center', }}>Contact</h1>
-            {/*{ useSelector(state => state ? <ContactForm/> : <p>Message successfully sent</p> }*/}
+            {/*{ formSubmitted ? <p>Message successfully sent</p> : <ContactForm/> }*/}
+            <ContactForm/>
+            {/*{formSubmitted && <h2 style={{textAlign: "center"}}>Message successfully sent</h2> }*/}
             <p style={{marginBottom: 100}}>
-
             </p>
         </div>
-
     )
 }
 

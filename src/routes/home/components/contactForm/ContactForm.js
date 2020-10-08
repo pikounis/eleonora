@@ -14,6 +14,7 @@ const ContactForm = () => {
     const dispatch = useDispatch();
 
     const text = useSelector(state => state.text);
+    const formSubmitted = useSelector(state => state.formSubmitted)
     const classes = useStyles();
     return (
         <div className={classes.root} >
@@ -25,64 +26,66 @@ const ContactForm = () => {
             >
                 <Form
                     onSubmit={(values) => dispatch(submitForm(values))}
-                    render={({ handleSubmit, values }) => (
-                        <form onSubmit={handleSubmit} noValidate>
-                            <Grid
-                                container
-                                direction="row"
-                                spacing={2}
-                            >
-                                <Grid item md={6} sm={12}>
-                                    <TextField
-                                        id="standard-basic"
-                                        label="First Name"
-                                        fullWidth
-                                        variant={"outlined"}
-                                        name="firstName"
-                                    />
+                    render={({ handleSubmit, form,values }) => {
+                        formSubmitted && form.reset()
+                        return(
+                            <form onSubmit={handleSubmit} noValidate>
+                                <Grid
+                                    container
+                                    direction="row"
+                                    spacing={2}
+                                >
+                                    <Grid item md={6} sm={12}>
+                                        <TextField
+                                            id="standard-basic"
+                                            label="First Name"
+                                            fullWidth
+                                            variant={"outlined"}
+                                            name="firstName"
+                                        />
+                                    </Grid>
+                                    <Grid item md={6} sm={12}>
+                                        <TextField
+                                            id="standard-basic"
+                                            label="Last Name"
+                                            fullWidth
+                                            variant={"outlined"}
+                                            name="lastName"
+                                        />
+                                    </Grid>
+                                    <Grid item md={12} sm={12}>
+                                        <TextField
+                                            id="standard-basic"
+                                            label="Email"
+                                            fullWidth
+                                            variant={"outlined"}
+                                            name="email"
+                                        />
+                                    </Grid>
+                                    <Grid item md={12} sm={12}>
+                                        <TextField
+                                            id="standard-basic"
+                                            label="Message"
+                                            fullWidth
+                                            variant={"outlined"}
+                                            multiline
+                                            rows={7}
+                                            name="message"
+                                        />
+                                    </Grid>
+                                    <Grid item md={2} sm={12}>
+                                        <Button
+                                            variant="contained"
+                                            color="primary"
+                                            fullWidth
+                                            type={"submit"}
+                                        >
+                                            Submit
+                                        </Button>
+                                    </Grid>
                                 </Grid>
-                                <Grid item md={6} sm={12}>
-                                    <TextField
-                                        id="standard-basic"
-                                        label="Last Name"
-                                        fullWidth
-                                        variant={"outlined"}
-                                        name="lastName"
-                                    />
-                                </Grid>
-                                <Grid item md={12} sm={12}>
-                                    <TextField
-                                        id="standard-basic"
-                                        label="Email"
-                                        fullWidth
-                                        variant={"outlined"}
-                                        name="email"
-                                    />
-                                </Grid>
-                                <Grid item md={12} sm={12}>
-                                    <TextField
-                                        id="standard-basic"
-                                        label="Message"
-                                        fullWidth
-                                        variant={"outlined"}
-                                        multiline
-                                        rows={7}
-                                        name="message"
-                                    />
-                                </Grid>
-                                <Grid item md={2} sm={12}>
-                                    <Button
-                                        variant="contained"
-                                        color="primary"
-                                        fullWidth
-                                        type={"submit"}
-                                    >
-                                        Submit
-                                    </Button>
-                                </Grid>
-                            </Grid>
-                        </form>
-                    )}
+                            </form>
+                    )}}
                 />
             </Paper>
         </div>
