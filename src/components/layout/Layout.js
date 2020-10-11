@@ -59,13 +59,13 @@ const getLocation = location => {
 
 export default function HideAppBar({children, ...props}) {
     const location = useSelector(state => state.route);
+    const path = useLocation().pathname
     const [currentTab, setCurrentTab] = React.useState(getLocation(location));
 
     const dispatch = useDispatch();
     useEffect(() => setCurrentTab(getLocation(location)), [location])
 
-
-    return (
+    return !path.includes('admin') && (
         <React.Fragment>
             <CssBaseline />
             <HideOnScroll {...props}>
