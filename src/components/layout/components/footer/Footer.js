@@ -7,8 +7,6 @@ import IconButton from "@material-ui/core/IconButton";
 
 const Footer = () => {
     const classes = useStyles();
-
-
     return (
         <div className={classes.root}>
             <Paper
@@ -17,7 +15,8 @@ const Footer = () => {
                 square
                 className={classes.paper}
             >
-                <IconButton><InstagramIcon/></IconButton>
+                <IconButton className={classes.icon} href={'https://instagram.com'}><InstagramIcon/></IconButton>
+                <IconButton className={classes.icon} href={'https://instagram.com'}><InstagramIcon/></IconButton>
             </Paper>
         </div>
     );

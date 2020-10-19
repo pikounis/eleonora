@@ -12,6 +12,8 @@ import Tab from '@material-ui/core/Tab';
 import Slide from '@material-ui/core/Slide';
 import { changeRoute } from '../../model/actions';
 import Footer from "./components/footer";
+import {withStyles} from '@material-ui/core/styles';
+import styles from "./styles";
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -57,7 +59,7 @@ const getLocation = location => {
     }
 }
 
-export default function HideAppBar({children, ...props}) {
+const HideAppBar = ({children, classes, ...props}) => {
     const location = useSelector(state => state.route);
     const path = useLocation().pathname
     const [currentTab, setCurrentTab] = React.useState(getLocation(location));
@@ -71,10 +73,11 @@ export default function HideAppBar({children, ...props}) {
             <HideOnScroll {...props}>
                 <AppBar>
                     <Toolbar>
-                        <Typography variant="h6" style={{ flexGrow: 1 }}>Eleonora Pikouni</Typography>
+                        <Typography variant="h6" className={classes.title}  component={Link} to={'/'} >Eleonora Pikouni</Typography>
+                        <div className={classes.spacer} />
                         <Tabs value={currentTab} aria-label="simple tabs example" onChange={(_, value) => setCurrentTab(value)}>
-                            <Tab label="Home" component={Link} to={'/'} onClick={() => dispatch(changeRoute('/'))}/>
-                            <Tab label="Gallery" component={Link} to={'/gallery'} onClick={() => dispatch(changeRoute('/gallery'))}/>
+                            <Tab className={classes.title} label="Home" component={Link} to={'/'} onClick={() => dispatch(changeRoute('/'))} />
+                            <Tab className={classes.title} label="Gallery" component={Link} to={'/gallery'} onClick={() => dispatch(changeRoute('/gallery'))}/>
                             {/*<Tab label="About" component={Link} to={'/about'} />*/}
                         </Tabs>
                     </Toolbar>
@@ -88,3 +91,5 @@ export default function HideAppBar({children, ...props}) {
         </React.Fragment>
     );
 }
+
+export default withStyles(styles)(HideAppBar);

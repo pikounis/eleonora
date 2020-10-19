@@ -6,15 +6,15 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         '& > *': {
             width: theme.spacing(16),
-            height: theme.spacing(16),
+            // height: theme.spacing(16),
         },
     },
     paper: {
         width: '100%',
         padding: 10,
         background: theme.palette.primary.dark,
-
-
+    },
+    icon: {
 
     }
 }));
