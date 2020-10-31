@@ -1,6 +1,12 @@
 backend:
   name: github
   repo: pikounis/eleonora
+  branch: master
+  api_root: https://api.github.com
+  site_domain: localhost:3000
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
 
 media_folder: "public/images"
 public_folder: "images"

@@ -87,7 +87,7 @@ const HideAppBar = ({children, classes, ...props}) => {
             {
                 children
             }
-            <Footer/>
+            {/*<Footer/>*/}
         </React.Fragment>
     );
 }

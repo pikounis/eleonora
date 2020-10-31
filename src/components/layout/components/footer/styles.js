@@ -13,9 +13,10 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         padding: 10,
         background: theme.palette.primary.dark,
+        display: 'flex',
     },
     icon: {
-
+        color: 'white'
     }
 }));
 

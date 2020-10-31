@@ -15,7 +15,7 @@ const Footer = () => {
                 square
                 className={classes.paper}
             >
-                <IconButton className={classes.icon} href={'https://instagram.com'}><InstagramIcon/></IconButton>
+                <h4>This is  a test</h4>
                 <IconButton className={classes.icon} href={'https://instagram.com'}><InstagramIcon/></IconButton>
             </Paper>
         </div>
