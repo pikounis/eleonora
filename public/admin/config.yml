@@ -6,58 +6,28 @@ backend:
   site_domain: localhost:3000
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  publish_mode: editorial_workflow
 
-
-media_folder: "public/images"
-public_folder: "images"
+media_folder: 'src/assets/photos'
+public_folder: 'images'
 
 collections:
-  - name: settings
-    label: Settings
+  - name: gallery
+    label: Gallery
     files:
-      - file: public/manifest.json
-        name: manifest
-        label: 'Manifest Settings'
+      - file: src/data/gallery.json
+        name: gallery_content
+        label: 'Gallery Content'
         fields:
-          - name: short_name
-            label: 'Short Name'
-            widget: string
-            required: true
-          - name: name
-            label: 'Name'
-            widget: string
-            required: true
-          - name: start_url
-            label: 'Start URL'
-            widget: string
-            default: '.'
-            required: true
-          - name: display
-            label: 'Display Type'
-            widget: string
-            default: 'standalone'
-            required: true
-          - name: theme_color
-            label: 'Theme Color'
-            widget: string
-            default: '#000000'
-            required: true
-          - name: background_color
-            label: 'Theme Color'
-            widget: string
-            default: '#FFFFFF'
-            required: true
-          - name: icons
-            widget: list
-            label: 'Icons'
-            allow_add: true
+          - label: "Gallery"
+            name: "galleryImages"
+            widget: "list"
+            summary: '{{fields.image}}'
             fields:
-              - widget: string
-                name: src
-                label: Source
-              - widget: string
-                name: sizes
-                label: 'Sizes'
-              - widget: string
-                name: type
-                label: 'Mime Type'
+              - label: 'Artwork'
+                name: author
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Description, name: description, widget: string}
+                  - {label: Photo, name: photo, widget: image}

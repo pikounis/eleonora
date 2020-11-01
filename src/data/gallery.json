@@ -1,0 +1,20 @@
+{
+  "title": "test",
+  "description": "this is a test",
+  "galleryImages": [
+    {
+      "author": {
+        "title": "Face",
+        "description": "This is the painting of a face",
+        "photo": "images/1.JPG"
+      }
+    },
+    {
+      "author": {
+        "title": "Face 2",
+        "description": "This is a second painting with a face in it. I really like faces!",
+        "photo": "images/14.JPG"
+      }
+    }
+  ]
+}
