@@ -15,13 +15,6 @@
         "description": "This is a second painting with a face in it. I really like faces!",
         "photo": "images/14.JPG"
       }
-    },
-    {
-      "author": {
-        "title": "This is the third painting ",
-        "description": "This is an example to test if it works.",
-        "photo": "images/warty-final-ubuntu.png"
-      }
     }
   ]
 }
