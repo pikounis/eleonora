@@ -15,6 +15,13 @@
         "description": "This is a second painting with a face in it. I really like faces!",
         "photo": "images/14.JPG"
       }
+    },
+    {
+      "author": {
+        "title": "Pic 3",
+        "description": "descriptionofpic3",
+        "photo": "images/warty-final-ubuntu.png"
+      }
     }
   ]
 }
