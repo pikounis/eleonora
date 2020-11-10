@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build" } },
+    { "src": "/api/server.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "^/static/(.*)", "dest": "/static/$1"},
+    { "src": "^/favicon.ico", "dest": "/favicon.ico"},
+    { "src": "^/manifest.json", "dest": "/manifest.json"},
+    { "src": "/api/.*", "dest": "/api/server.js" },
+    { "src": ".*", "dest": "/index.html"}
+  ]
+}

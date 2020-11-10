@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import { Home, About } from './routes';
+import { Home } from './routes';
 import Layout from "./components/layout";
 import Gallery from "./routes/gallery/Gallery";
 

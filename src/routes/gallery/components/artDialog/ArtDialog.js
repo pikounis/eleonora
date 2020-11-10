@@ -23,7 +23,7 @@ const ArtDialog = ({ open, handleClose, title, image, description }) => {
             >
                 <DialogTitle id="responsive-dialog-title">{ title }</DialogTitle>
                 <DialogContent>
-                    <img src={ image } alt={"Art photo"} style={styles.image} />
+                    <img src={ image } alt={"Art"} style={styles.image} />
                     <p></p>
                     <DialogContentText>
                         { description }
