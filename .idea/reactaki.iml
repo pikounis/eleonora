@@ -10,5 +10,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="email_api_koa" />
+    <orderEntry type="module" module-name="email_api_koa" />
   </component>
 </module>
