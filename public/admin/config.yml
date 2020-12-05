@@ -3,7 +3,7 @@ backend:
   repo: pikounis/eleonora
   branch: master
   api_root: https://api.github.com
-  #site_domain: https://eleonora-gallery.vercel.app/
+  site_domain: eleonora-gallery.vercel.app
   base_url: https://api.netlify.com
   auth_endpoint: auth
   publish_mode: editorial_workflow
