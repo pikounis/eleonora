@@ -3,7 +3,7 @@ backend:
   repo: pikounis/eleonora
   branch: master
   api_root: https://api.github.com
-  site_domain: localhost:3000
+  site_domain: https://eleonora-gallery.vercel.app/
   base_url: https://api.netlify.com
   auth_endpoint: auth
   publish_mode: editorial_workflow
@@ -16,7 +16,7 @@ collections:
   - name: gallery
     label: Gallery
     files:
-      - file: src/data/gallery.json
+      - file: 'src/data/gallery.json'
         name: gallery_content
         label: 'Gallery Content'
         fields:
