@@ -7,7 +7,7 @@ import { submitFormType, submitFormSucceeded, submitFormFailed } from './actions
 const testEpic = (action$, state$) => action$.pipe(
     ofType(submitFormType),
     mergeMap((action) =>
-        axios.post('/addData', action.payload).then(response => ({...response, success: response.data !== ''}) )
+        axios.post('https://polar-mountain-73988.herokuapp.com/addData', action.payload).then(response => ({...response, success: response.data !== ''}) )
     ),
     map(({ success }) => success ? submitFormSucceeded() : submitFormFailed()),
 );
