@@ -4,22 +4,22 @@
   "galleryImages": [
     {
       "author": {
-        "title": "Face",
-        "description": "This is the painting of a face",
+        "title": "1",
+        "description": "-",
         "photo": "images/1.JPG"
       }
     },
     {
       "author": {
-        "title": "Face 2",
-        "description": "This is a second painting with a face in it. I really like faces!",
+        "title": "2",
+        "description": "-",
         "photo": "images/14.JPG"
       }
     },
     {
       "author": {
         "photo": "images/screenshot-2020-12-05-at-3.17.53-pm.png",
-        "description": "tree",
+        "description": "--",
         "title": ":("
       }
     },
