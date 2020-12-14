@@ -25,9 +25,16 @@
     },
     {
       "author": {
-        "title": "This is a Photo ",
-        "description": "Photo of Boat",
-        "photo": "images/123123.jpg"
+        "title": "dynamite",
+        "description": "beyond looks",
+        "photo": "images/c75570cd-63d2-40a2-bbe2-8b750038eac6.jpeg"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/a11f04de-1de7-4640-82fa-f94c77a63f26.jpeg",
+        "title": ".",
+        "description": "."
       }
     }
   ]
