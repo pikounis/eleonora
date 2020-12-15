@@ -11,13 +11,6 @@
     },
     {
       "author": {
-        "photo": "images/002.jpg",
-        "title": "p",
-        "description": "p"
-      }
-    },
-    {
-      "author": {
         "photo": "images/003.jpg",
         "title": "p",
         "description": "p"
@@ -112,6 +105,13 @@
         "title": "p",
         "description": "p",
         "photo": "images/016.jpg"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/002.jpg",
+        "title": "p",
+        "description": "p"
       }
     },
     {
