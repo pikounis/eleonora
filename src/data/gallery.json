@@ -1,5 +1,41 @@
 {
   "title": "test",
   "description": "this is a test",
-  "galleryImages": []
+  "galleryImages": [
+    {
+      "author": {
+        "photo": "images/001.jpg",
+        "title": "p",
+        "description": "p"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/002.jpg",
+        "title": "p",
+        "description": "p"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/003.jpg",
+        "title": "p",
+        "description": "p"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/004.jpg",
+        "title": "p",
+        "description": "p"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/005.jpg",
+        "title": "p",
+        "description": "p"
+      }
+    }
+  ]
 }
