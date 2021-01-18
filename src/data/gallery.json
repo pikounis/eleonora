@@ -5,21 +5,21 @@
     {
       "author": {
         "photo": "images/001.jpg",
-        "title": "The Anatolic Anatgony between Passion and Clarity",
+        "title": "The Anatolic Anatgonism between Passion and Clarity",
         "description": "p"
       }
     },
     {
       "author": {
         "photo": "images/003.jpg",
-        "title": "p",
+        "title": "The silent scream",
         "description": "p"
       }
     },
     {
       "author": {
         "photo": "images/004.jpg",
-        "title": "p",
+        "title": "The Power of Powerlessness",
         "description": "p"
       }
     },
@@ -34,13 +34,6 @@
       "author": {
         "title": "p",
         "description": "p",
-        "photo": "images/006.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
         "photo": "images/007.jpg"
       }
     },
@@ -49,13 +42,6 @@
         "title": "p",
         "description": "p",
         "photo": "images/008.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
-        "photo": "images/009.jpeg"
       }
     },
     {
@@ -83,13 +69,6 @@
       "author": {
         "title": "p",
         "description": "p",
-        "photo": "images/013.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
         "photo": "images/014.jpg"
       }
     },
@@ -104,35 +83,7 @@
       "author": {
         "title": "p",
         "description": "p",
-        "photo": "images/016.jpg"
-      }
-    },
-    {
-      "author": {
-        "photo": "images/002.jpg",
-        "title": "p",
-        "description": "p"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
-        "photo": "images/017.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
         "photo": "images/018.jpeg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
-        "photo": "images/019.jpeg"
       }
     },
     {
@@ -160,21 +111,7 @@
       "author": {
         "title": "p",
         "description": "p",
-        "photo": "images/023.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
         "photo": "images/024.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "p",
-        "description": "p",
-        "photo": "images/025.jpg"
       }
     }
   ]
