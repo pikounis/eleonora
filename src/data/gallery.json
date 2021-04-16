@@ -4,16 +4,23 @@
   "galleryImages": [
     {
       "author": {
-        "photo": "images/001.jpg",
-        "title": "The Anatolic Anatgonism between Passion and Clarity",
-        "description": "p"
+        "title": "Mindfulness ",
+        "description": "p",
+        "photo": "images/011.jpg"
       }
     },
     {
       "author": {
-        "photo": "images/003.jpg",
-        "title": "The silent scream",
-        "description": "p"
+        "title": "cyclades",
+        "description": "p",
+        "photo": "images/022.jpg"
+      }
+    },
+    {
+      "author": {
+        "title": "A Reverse Story",
+        "description": "p",
+        "photo": "images/021.jpg"
       }
     },
     {
@@ -32,6 +39,13 @@
     },
     {
       "author": {
+        "photo": "images/001.jpg",
+        "title": "The Anatolic Anatgonism between Passion and Clarity",
+        "description": "p"
+      }
+    },
+    {
+      "author": {
         "title": "The anonymous soul",
         "description": "p",
         "photo": "images/007.jpg"
@@ -42,13 +56,6 @@
         "title": "what do you see?",
         "description": "p",
         "photo": "images/010.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "Mindfulness ",
-        "description": "p",
-        "photo": "images/011.jpg"
       }
     },
     {
@@ -74,23 +81,16 @@
     },
     {
       "author": {
-        "title": "A Reverse Story",
-        "description": "p",
-        "photo": "images/021.jpg"
-      }
-    },
-    {
-      "author": {
-        "title": "cyclades",
-        "description": "p",
-        "photo": "images/022.jpg"
-      }
-    },
-    {
-      "author": {
         "title": "ode to the never ending",
         "description": "p",
         "photo": "images/024.jpg"
+      }
+    },
+    {
+      "author": {
+        "photo": "images/003.jpg",
+        "title": "The silent scream",
+        "description": "p"
       }
     }
   ]
